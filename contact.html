@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+
+        <!-- ////////////////////------NAVBAR ----//////////////////////////////////// -->
+        <div class="bgimg">
+
+        </div>
+        <div class="navbar">
+            <h1>
+                <div class="logo"><a herf="index.html">Be FODDIE </a></div>
+            </h1>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menue.html">MENU</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT </a></li>
+
+            </ul>
+            <a href="userprofile.html" id="user"><i class="fa-solid fa-circle-user"></i></a>
+
+            <!-- <a href="#" class="action_btn"><i class="fa-solid fa-circle-user"></i></a> -->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menue.html">MENU</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT </a></li>
+            <div class="nav_btn">
+                <button id="book_table_btn"><b><a href="login.html" style="color: white;"> BOOK TABLE</a></b></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="bookingBt">
+        <button id="book_table_btn2"><b><a href="login.html"> BOOK TABLE</a></b></button>
+    </div>
+
+    <!-- ////////XXX//////////------NAVBAR ----////////////XXX/////////////////// -->
+
+
+    <div class="container_info">
+        <div class="comment-box gradient-bg">
+            <h2 class="comment-title">Join the conversation</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" placeholder="Type your comment here"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+ <!-- ================================ FOOTER ===================================== -->
+ <footer>
+
+    <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menue.html">Menu</a></li>
+            <li><a href="booktable.html">Book Table</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Support Center</a></li>
+            <li><a href="contact.html">Feedback</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+            <li><a href="#">+91 0123456789</a></li>
+            <li><a href="#">gaurav@gmail.com</a></li>
+            <li><a href="#">Eduonix,Thane</a></li>
+
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="f-links">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+
+            <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="mapBox">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120562.30067206293!2d73.0014603!3d19.213891949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8fcfe76fd59%3A0xcf367d85f7c50283!2sThane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1687954748726!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+</footer>
+<!-- ===========xxx================= FOOTER =====================xxx============== -->
+
+
+</body>
+<script>
+
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownmenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownmenu.classList.toggle('open')
+        const isOpen = dropDownmenu.classList.contains('open')
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    }
+</script>
+</body>
+
+</html>
