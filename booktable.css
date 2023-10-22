@@ -195,6 +195,9 @@ header {
 }
 
 /* ============================================================ */
+.bookTableSec{
+    padding-top: 5rem;
+}
 .bookTable{
     display: flex;
     justify-content: center;
@@ -202,6 +205,7 @@ header {
     flex-direction: row;
     /* background: red; */
     padding: 50px;
+    gap: 5rem;
 }
 
 .bookTableCard{

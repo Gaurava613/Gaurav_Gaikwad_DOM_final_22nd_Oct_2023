@@ -56,6 +56,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 20px;
 
 }
 
@@ -211,14 +212,23 @@ header {
     justify-content: center;
     /* align-items: center; */
     gap: 10rem;
+    padding-top: 100px;
 }
 
 .userSec{
     /* background: #106512; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+}
+.profileContent{
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 60px;
 }
 .nickname label{
     padding-left: 5rem;
@@ -263,6 +273,48 @@ header {
 }
 /* =================================================================== */
 
+#addDatas{
+
+    width: 30rem;
+    /* background: rgb(248, 226, 147); */
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+    gap: 10px;
+    padding-top: 20px;
+    
+        }
+        #addDatas ul{
+    margin-top: -8px;
+            background: lavender;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            border-radius: 10px;
+        }
+        #addDatas li{
+            
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            background: rgb(247, 248, 245);
+            
+        }
+        #addDatas span {
+            background: rgb(179, 14, 14);
+            justify-content: center;
+            align-items: center;
+           padding: 10px 15px ;
+           border: none;
+           border-radius: 5px;
+           color: white;
+            cursor: pointer;
+            float: right;
+            
+        }
+
+
+
 .orderPageSec{
     background: rgb(62, 134, 80);
     padding: 20px;
@@ -271,7 +323,7 @@ header {
 }
 .orderSec{
     /* background: rgb(39, 142, 65); */
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     gap: 10px;

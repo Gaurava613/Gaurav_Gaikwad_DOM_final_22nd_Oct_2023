@@ -15,6 +15,85 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<style>
+    #addDatas{
+display: none;
+    }
+    .calender{
+        background: rgb(234, 233, 233);
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .cHeader{
+        font-size: 2rem;
+        background: rgb(231, 178, 54);
+        color: white;
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        border-radius: 10px 10px 0px 0px;   
+    }
+    .cbody{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 20px 35px;
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+    .checkA{
+        font-size: 12px;
+    }
+    #red{
+        /* background: red; */
+        color: red;
+        /* padding: 10px 20px; */
+    }
+    #yellow{
+        color: rgb(255, 149, 0);
+    }
+    @media (max-width:1280px){
+        .bookTable{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media (max-width:540px){
+        .calender{
+        background: rgb(234, 233, 233);
+        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .cHeader{
+        font-size: 2rem;
+        background: rgb(231, 178, 54);
+        color: white;
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        border-radius: 10px 10px 0px 0px;   
+    }
+    .cbody{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 10px 20px;
+        font-size: 1rem;
+        padding: 20px;
+    }
+    }
+
+</style>
 <body>
     <header>
 
@@ -24,7 +103,8 @@
         </div>
         <div class="navbar">
             <h1>
-                <div class="logo"><a herf="index.html"><img src="images/Be_FoDDIE-removebg-preview.png" alt=""> </a></div>            </h1>
+                <!-- <div class="logo"><a herf="index.html"><img src="images/Be_FoDDIE-removebg-preview.png" alt=""> </a></div>        -->
+                 </h1>
             <ul class="links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="menue.html">MENU</a></li>
@@ -57,31 +137,363 @@
 
     <section class="bookTableSec">
         <div class="bookTable">
+            <div class="checkAvailabelSec">
+                <div class="calender">
+                    <div class="cHeader">
+                      <b>  November 2023</b>
+                    </div>
+                    <div class="cbody">
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                SUN
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates" id="yellow">
+                            <div class="date">
+                                MON
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates" id="yellow">
+                            <div class="date">
+                                TUE
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates" id="yellow">
+                            <div class="date">
+                                WED
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates" id="yellow">
+                            <div class="date">
+                                THR
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates" id="yellow">
+                            <div class="date">
+                                FRI
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates" id="yellow">
+                            <div class="date">
+                                SAT
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                
+                            </div>
+                            <div class="checkA">
+                               
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                
+                            </div>
+                            <div class="checkA">
+                              
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                1
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+
+                        <div class="cdates">
+                            <div class="date">
+                                2
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                3
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                4
+                            </div>
+                            <div class="checkA" >
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                5
+                            </div>
+                            <div class="checkA" >
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                6
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                7
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                8
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                9
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                10
+                            </div>
+                            <div class="checkA" >
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                11
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red"> 
+                            <div class="date">
+                                12
+                            </div>
+                            <div class="checkA">
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                13
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                14
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                15
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                16
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                17
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                18
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                19
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                20
+                            </div>
+                            <div class="checkA">
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                21
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                22
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                23
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                24
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red" >
+                            <div class="date">
+                                25
+                            </div>
+                            <div class="checkA">
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                26
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                27
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates">
+                            <div class="date">
+                                28
+                            </div>
+                            <div class="checkA">
+                                AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                29
+                            </div>
+                            <div class="checkA">
+                                UN-AVI
+                            </div>
+                        </div>
+                        <div class="cdates" id="red">
+                            <div class="date">
+                                30
+                            </div>
+                            <div class="checkA">
+                                UN-AVI
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
             <div class="bookTableCard">
                 <div class="allInputsSec">
                         <div class="inpSec">
                             <label for="name">User Name</label>
-                            <input type="text" name="" id="name"    required>
+                            <input type="text" name="" id="uname"    required>
                         </div>
 
                         <div class="inpSec">
                             <label for="phone">Phone</label>
-                            <input type="number" name="" id="phone"required>
+                            <input type="number" name="" id="uphone"required>
                         </div>
 
                         <div class="inpSec">
                             <label for="date">Date</label>
-                            <input type="date" name="" id="date"required>
+                            <input type="date" name="" id="udate"required>
                         </div>
 
                         <div class="inpSec">
                             <label for="time">Time</label>
-                            <input type="time" name="" id="time"required>
+                            <input type="time" name="" id="utime"required>
                         </div>
 
                         <div class="inpSec">
                             <label for="members">Number of Members</label>
-                            <input type="number" name="" id="members"required>
+                            <input type="text" name="" id="members"required>
                         </div>
 
                         <div class="inpSec">
@@ -91,12 +503,18 @@
                         </div>
                         <div class="subTn">
                         <button id="sum_data" onclick="takeData()">SUBMIT</button>
+                        <!-- <button id="sum_data">SUBMIT</button> -->
                     </div>
                 </div>
+            
+                
                 <div class="imgCont">
                     <img src="images/chef-making-ok-sign-white-background.jpg" alt="">
                 </div>
             </div>
+        </div>
+        <div id="addDatas">
+        
         </div>
     </section>
     <!-- ============XXX==============BOOK TABLE SEC==========XXX============== -->
@@ -154,7 +572,8 @@
 
 
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="main.js"></script>
 
 <script>
 
@@ -171,39 +590,109 @@
     }
 
 
-    var array=[]
-    function takeData(){
-        window.location.href = "userprofile.html";
+//     function takeData(){
+// const name=document.getElementById('uname')
+// const phone=document.getElementById('uphone')
+// const date=document.getElementById('udate')
+// const time=document.getElementById('utime')
+// const noOfMembers=document.getElementById('members')
+// const note=document.getElementById('cmt')
+// const mainDiv=document.getElementById('addDatas')
+// const creUl=document.createElement('UL')
+// const creEle=document.createElement('LI')
+// addDatas.appendChild(creUl)
+// creUl.appendChild(creEle)
 
-let takeUserName=document.getElementById('name').value
-let takePhone=document.getElementById('phone').value
-takeDate=document.getElementById('date').value
-takeTime=document.getElementById('time').value
-takeMembers=document.getElementById('members').value
-takeNote=document.getElementById('cmt').value
+// creEle.innerHTML=[`NAME : ${name.value} <br> PHONE : ${phone.value} <br> DATE : ${date.value} <br> TIME : ${time.value} <br> NUMBER OF MEMBERS : ${noOfMembers.value} <br> NOTE : ${note.value}`]
 
-let obj=new Details(takeUserName,takePhone)
-array.push(obj)
-display()
+// document.getElementById('uname').value=""
+// const deleEle=document.createElement('span')
+// creEle.appendChild(deleEle)
+// deleEle.innerHTML="CLEAR"
+// saveData()
+// showData()
+//  }
+//  addDatas.addEventListener('click',(e)=>{
+//    if(e.target.tagName==='SPAN'){
+//     console.log("hi")
+//     e.target.parentElement.remove()
+//    }
+//    saveData()
+//    showData()
+//  })
 
-document.getElementById('name').value=" "
-document.getElementById('phone').value=" "
-document.getElementById('date').value=" "
-document.getElementById('time').value=" "
-document.getElementById('members').value=" "
-document.getElementById('cmt').value=" "
+//  function clearallData(){
+//     addDatas.innerHTML=" "
+//     console.log("hi")
+//     saveData()
+// showData()    
+//  }
+
+
+//  function saveData(){
+//     localStorage.setItem('data',addDatas.innerHTML)
+//  }
+//  function showData(){
+//     addDatas.innerHTML=localStorage.getItem('data')
+//  }
+//  showData()
+
+ 
 
 
 
-}
 
-function display(){
-    html=`<h1> Your Orders </h1>`
-    for(let x of array){
-        html += x.display()
-    }
-    document.getElementById('addDatas').innerHTML=html
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     var array=[]
+//     function takeData(){
+//         // window.location.href = "userprofile.html";
+
+// let takeUserName=document.getElementById('name').value
+// let takePhone=document.getElementById('phone').value
+// takeDate=document.getElementById('date').value
+// takeTime=document.getElementById('time').value
+// takeMembers=document.getElementById('members').value
+// takeNote=document.getElementById('cmt').value
+
+// let obj=new Details(takeUserName,takePhone)
+// array.push(obj)
+// display()
+
+// document.getElementById('name').value=" "
+// document.getElementById('phone').value=" "
+// document.getElementById('date').value=" "
+// document.getElementById('time').value=" "
+// document.getElementById('members').value=" "
+// document.getElementById('cmt').value=" "
+
+
+
+// }
+// addDatas.addEventListner((e)=>{
+//     e.target.
+// })
+
+
+// function display(){
+//     html=`<h1> Your Orders </h1>`
+//     for(let x of array){
+//         html += x.display()
+//     }
+//     document.getElementById('addDatas').innerHTML=html
+// }
 </script>
 
 

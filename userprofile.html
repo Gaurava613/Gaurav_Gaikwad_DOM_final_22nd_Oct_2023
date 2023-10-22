@@ -14,7 +14,12 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style> 
 
+
+       
+ 
+        </style>
 <body>
     <header>
 
@@ -24,7 +29,8 @@
         </div>
         <div class="navbar">
             <h1>
-                <div class="logo"><a herf="index.html"><img src="images/Be_FoDDIE-removebg-preview.png" alt=""> </a></div>            </h1>
+                <!-- <div class="logo"><a herf="index.html"><img src="images/Be_FoDDIE-removebg-preview.png" alt=""> </a></div> -->
+            </h1>
             <ul class="links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="menue.html">MENU</a></li>
@@ -32,6 +38,7 @@
                 <li><a href="contact.html">CONTACT </a></li>
 
             </ul>
+
             <a href="userprofile.html" id="user"><i class="fa-solid fa-circle-user"></i></a>
 
             <!-- <a href="#" class="action_btn"><i class="fa-solid fa-circle-user"></i></a> -->
@@ -70,12 +77,10 @@
                     <div class="nickname">
                         <label for="nickName">Foodie Jay</label>
                     </div>
-                    <div class="username">
-                        <label for="userName">User Name :</label> Jay Swami
-                    </div>
-                    <div class="useremail">
-                        <label for="useremail">Email :</label> jayfoodie@gmail.com
-                    </div>
+                    <!-- <div class="useremail">
+                        <label for="userName">User Name :</label> 
+                    </div> -->
+                   
                 </div>
             </div>
 
@@ -85,9 +90,8 @@
                     <div class="headerText">
                         <h1>ALL ORDERS</h1>
                     </div>
-                    <!-- <div id="addDatas" style="background: white; height: 5rem; width: 10rem;"></div>
-                        <div class="orders"> -->
-                    <div class="order1">
+
+                    <!-- <div class="order1">
                         <div class="nameS">
                             Name: Jay Swami
                         </div>
@@ -110,79 +114,10 @@
                         </div>
                         <button id="delete">DELETE</button>
 
-                    </div>
+                    </div> -->
 
-                    <div class="order1">
-                        <div class="nameS">
-                            Name: Jay Swami
-                        </div>
-                        <div class="phoneS">
-                            Phone: 0987654321
-                        </div>
-                        <div class="dateS">
-                            Date: 17-09-2023
-                        </div>
-                        <div class="timeS">
-                            Time: 18:00 pm
-                        </div>
-                        <div class="memberS">
-                            Member: 5
-                        </div>
-                        <div class="commentS">
-                            Note: Book a Big Table
-                        </div>
-                        <div class="commentS">
-                        </div>
-                        <button id="delete">DELETE</button>
-                    </div>
-
-                    <div class="order1">
-                        <div class="nameS">
-                            Name: Jay Swami
-                        </div>
-                        <div class="phoneS">
-                            Phone: 0987654321
-                        </div>
-                        <div class="dateS">
-                            Date: 17-09-2023
-                        </div>
-                        <div class="timeS">
-                            Time: 18:00 pm
-                        </div>
-                        <div class="memberS">
-                            Member: 5
-                        </div>
-                        <div class="commentS">
-                            Note: Book a Big Table
-                        </div>
-                        <div class="commentS">
-                        </div>
-                        <button id="delete">DELETE</button>
-
-                    </div>
-
-                    <div class="order1">
-                        <div class="nameS">
-                            Name: Jay Swami
-                        </div>
-                        <div class="phoneS">
-                            Phone: 0987654321
-                        </div>
-                        <div class="dateS">
-                            Date: 17-09-2023
-                        </div>
-                        <div class="timeS">
-                            Time: 18:00 pm
-                        </div>
-                        <div class="memberS">
-                            Member: 5
-                        </div>
-                        <div class="commentS">
-                            Note: Book a Big Table
-                        </div>
-                        <div class="commentS">
-                        </div>
-                        <button id="delete">DELETE</button>
+                    <div id="addDatas">
+                       
 
                     </div>
                 </div>
@@ -193,6 +128,9 @@
 
     </div>
     </div>
+    <!-- <div id="addDatas">
+        <input type="submit" value="DELETE" onclick="clearallData()">
+    </div> -->
 
     <!-- =============XXX============ USER SECTION =========XXX========================== -->
 
@@ -248,7 +186,9 @@
     <!-- ===========xxx================= FOOTER =====================xxx============== -->
 
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="main.js"></script>
+
 <script>
 
     const toggleBtn = document.querySelector('.toggle_btn')
